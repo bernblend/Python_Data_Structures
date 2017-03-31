@@ -1,0 +1,10 @@
+Structured Data:
+
+
+We have functioned with the 'string' data type.
+    - A series of characters inside of quotation marks.
+
+
+Now we look at the 'list' data type:
+    - Elements can be string, int, or another 'list'.
+    - Placed in brackets [ ] separated by commas.
