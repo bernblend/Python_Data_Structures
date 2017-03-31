@@ -15,7 +15,7 @@ Mutation:
   - Lists support Mutation. This means we can change the
   value of a list after it's created.
 
-  - s = 'Yello'
+    s = 'Yello'
     s = s + 'w'
     The above does NOT modify the current string but instead
     creates a new list.
@@ -25,3 +25,35 @@ Mutation:
 
 
 Aliasing:
+  - Having two different ways to refer to an object.
+
+
+
+
+List Operation:
+  .append()
+    - Used as      <list>.append(<element>)
+      This will add an element to the end of a list.
+      This is a mutation to the existing list,
+      it's NOT creating a new list.
+
+
+  '+' operator
+    - Used as      <list> + <list>
+      Ex:
+        [0,1] + [2,3]  ->   [0,1,2,3]
+
+  len operator
+    - Short for length, used as       len(<list>)
+      Works on strings or any object that is a collection of things.
+      OUTPUT is the number of elements in the input.
+        Ex:
+          len([0,1])   ->   2 elements
+
+          len(['a',['b', ['c']]])    -> 2
+          NOTE: it only looks at the outer elements.
+
+    - Using len() on a string
+      Ex:
+        len("Udacity")  ->  7
+        NOTE: this shows how many characters are in the list.
