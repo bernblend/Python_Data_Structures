@@ -8,3 +8,20 @@ We have functioned with the 'string' data type.
 Now we look at the 'list' data type:
     - Elements can be string, int, or another 'list'.
     - Placed in brackets [ ] separated by commas.
+
+
+
+Mutation:
+  - Lists support Mutation. This means we can change the
+  value of a list after it's created.
+
+  - s = 'Yello'
+    s = s + 'w'
+    The above does NOT modify the current string but instead
+    creates a new list.
+    OUTPUT: YELLOW
+    and 's' refers to this new string.
+
+
+
+Aliasing:
