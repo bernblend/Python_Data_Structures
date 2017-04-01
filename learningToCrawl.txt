@@ -54,6 +54,26 @@ List Operation:
           NOTE: it only looks at the outer elements.
 
     - Using len() on a string
-      Ex:
-        len("Udacity")  ->  7
-        NOTE: this shows how many characters are in the list.
+        Ex:
+          len("Udacity")  ->  7
+          NOTE: this shows how many characters are in the list.
+
+
+Concept Breakdown:
+
+1. Structured Data:
+  We have covered data in the form of a string and a list.
+    Strings: must be characters.
+    Lists: can be anything (characters, numbers, other lists).
+
+
+2: Mutability:
+  A 'list' is mutable, meaning it CAN be mutated, and a
+  'string' is immutable, meaning it CANNOT be mutated.
+
+
+3. The difference between append and '+':
+  The '+' is used for concatenation, this also creates
+  a new string or list.
+  While 'append' is used to mutate a list and does NOT
+  create a new list.
