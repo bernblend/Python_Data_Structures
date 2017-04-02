@@ -30,3 +30,5 @@ print "Python:  '3 in p'  "
 
 p = [0, 1, 2]
 print 3 in p
+
+print "OUTPUT: False     because '3' is not in the list."
