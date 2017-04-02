@@ -36,3 +36,24 @@ print "OUTPUT: False     because '3' is NOT in the list.\n"
 print 1 in p
 
 print "OUTPUT: True     because '1' IS in the list.\n"
+
+
+
+
+print "\nUSING 'not in': "
+
+print "\n Syntax:    <value> not in <list>"
+
+print "English: is '3' NOT in the list?\n"
+
+print "Python:  '3 not in p'  "
+
+
+p = [0, 1, 2]
+print 3 not in p
+
+print "OUTPUT: True     because '3' is NOT in the list.\n"
+
+print 1 not in p
+
+print "OUTPUT: False     because '1' IS in the list.\n"
