@@ -31,4 +31,8 @@ print "Python:  '3 in p'  "
 p = [0, 1, 2]
 print 3 in p
 
-print "OUTPUT: False     because '3' is not in the list."
+print "OUTPUT: False     because '3' is NOT in the list.\n"
+
+print 1 in p
+
+print "OUTPUT: True     because '1' IS in the list.\n"
