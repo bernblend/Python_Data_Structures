@@ -8,7 +8,19 @@
 # If there is no matching element,
 # return -1.
 
+def find_element(p, t):
+    if t in p:
+        return p.index(t)
+    else:
+        return -1
 
+
+print "\nAnother Way:\n"
+
+def find_element(p, t):
+    if t not in p:
+        return -1
+    return p.index(t)
 
 
 
