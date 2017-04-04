@@ -20,11 +20,15 @@ some_string = "Hello {a_value}, {some_value}".format(**some_dictionary)
 print some_string
 
 
-board = """
-{top left} | {top center} | {top right}
----------
-{center left} | {center} | {center right}
----------
-{bottom left} | {bottom center} | {bottom right}
-""".format(**current_positions)
-print board
+
+def display_board(current_positions):
+    board = """
+    {top left} | {top center} | {top right}
+    ---------
+    {center left} | {center} | {center right}
+    ---------
+    {bottom left} | {bottom center} | {bottom right}
+    """.format(**current_positions)
+    print board
+
+display_board(current_positions)
