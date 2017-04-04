@@ -1,6 +1,6 @@
 #
 
-current_position = {"top left": " ", "top center": " ", "top right": " ",
+current_positions = {"top left": " ", "top center": " ", "top right": " ",
             "center left": " ", "center": " ", "center right": " ",
             "bottom left": " ", "bottom center": " ", "bottom right": " "}
 
@@ -18,3 +18,13 @@ print "\nANOTHER WAY: Using a Dictionary\n"
 some_dictionary = {"a_value" : "x", "some_value" : "y"}
 some_string = "Hello {a_value}, {some_value}".format(**some_dictionary)
 print some_string
+
+
+board = """
+{top left} | {top center} | {top right}
+---------
+{center left} | {center} | {center right}
+---------
+{bottom left} | {bottom center} | {bottom right}
+""".format(**current_positions)
+print board
