@@ -8,5 +8,5 @@ current_position = {"top left": " ", "top center": " ", "top right": " ",
 current_player = "X"
 
 
-some_string = "Hello {0}, {1}".format("x","y")
+some_string = "Hello {a_value}, {some_value}".format(a_value = "x", some_value = "y")
 print some_string
