@@ -6,3 +6,7 @@ current_position = {"top left": " ", "top center": " ", "top right": " ",
 
 
 current_player = "X"
+
+
+some_string = "Hello {0}, {1}".format("x","y")
+print some_string
