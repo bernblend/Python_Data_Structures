@@ -52,13 +52,23 @@ def user_move(current_positions, current_player):
 
 def is_game_over(current_positions):
     winners = [["top left", "top center","top right"],
-    ["center left", "center", "center right"],
-    ["bottom left", "bottom center", "bottom right"],
-    ["top left", "center left", "bottom left"],
-    ["top center", "center", "bottom center"],
-    ["top right", "center right", "bottom right"],
-    ["top left", "center", "bottom right"],
-    ["top right", "center", "bottom left"]]
+                ["center left", "center", "center right"],
+                ["bottom left", "bottom center", "bottom right"],
+                ["top left", "center left", "bottom left"],
+                ["top center", "center", "bottom center"],
+                ["top right", "center right", "bottom right"],
+                ["top left", "center", "bottom right"],
+                ["top right", "center", "bottom left"]]
+
+    for winning_combo in winners:
+        possible_winner = current_positions[winning_combo[0]]
+        if possible_winner != " ":
+            possibly_won = True
+            for value in winning_combo:
+                if current_positions[value] != possible_winner
+                    possibly_won = False
+                    break
+                    
 
 
 current_positions, current_player = user_move(current_positions, current_player)
