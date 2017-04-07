@@ -51,14 +51,14 @@ def user_move(current_positions, current_player):
 
 
 def is_game_over(current_positions):
-    winners = [[],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    []]
+    winners = [["top left", "top center","top right"],
+    ["center left", "center", "center right"],
+    ["bottom left", "bottom center", "bottom right"],
+    ["top left", "center left", "bottom left"],
+    ["top center", "center", "bottom center"],
+    ["top right", "center right", "bottom right"],
+    ["top left", "center", "bottom right"],
+    ["top right", "center", "bottom left"]]
 
 
 current_positions, current_player = user_move(current_positions, current_player)
