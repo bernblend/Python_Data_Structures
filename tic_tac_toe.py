@@ -70,7 +70,7 @@ def is_game_over(current_positions):
                     possibly_won = False
                     break
             if possibly_won:
-                return possible_winner
+                return possible_winner + "Wins!"
     is_draw = False
     for position in current_positions:
         if current_positions[position] == " ":
@@ -79,6 +79,24 @@ def is_game_over(current_positions):
     if is_draw:
         return "Draw!"
 
+
+def play_game():
+    current_positions = {"top left": " ", "top center": " ",
+        "top right": " ","center left": " ", "center": " ",
+        "center right": " ", "bottom left": " ",
+        "bottom center": " ", "bottom right": " "}
+    current_player = "X"
+    result = False
+    while not result:
+        display_board(current_positions)
+        current_positions, current_player = user_move(current_positions, current_player)
+        result = is_game_over(current_positions)
+        if result:
+            print "GAME OVER"
+            print "Result: ", result
+
+
+play_game()
 
 current_positions, current_player = user_move(current_positions, current_player)
 print current_player
