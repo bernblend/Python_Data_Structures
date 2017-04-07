@@ -1,8 +1,8 @@
 #
 
-current_positions = {"top left": " ", "top center": " ", "top right": " ",
-            "center left": " ", "center": " ", "center right": " ",
-            "bottom left": " ", "bottom center": " ", "bottom right": " "}
+current_positions = {"top left": " ", "top center": " ",
+"top right": " ","center left": " ", "center": " ", "center right": " ",
+"bottom left": " ", "bottom center": " ", "bottom right": " "}
 
 
 current_player = "X"
@@ -51,8 +51,14 @@ def user_move(current_positions, current_player):
 
 
 def is_game_over(current_positions):
-    
-
+    winners = [[],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []]
 
 
 current_positions, current_player = user_move(current_positions, current_player)
