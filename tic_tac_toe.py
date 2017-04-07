@@ -31,5 +31,13 @@ def display_board(current_positions):
     """.format(**current_positions)
     print board
 
+def user_move(current_positions, current_player):
+    possible_moves = []
+    for position = current_positions:
+        if current_positions[position] = " ":
+            possible_moves.append(position)
+        
+
+
 current_positions["top left"] = "X"
 display_board(current_positions)
