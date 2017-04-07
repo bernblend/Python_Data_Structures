@@ -34,12 +34,15 @@ def display_board(current_positions):
 def user_move(current_positions, current_player):
     possible_moves = []
     user_prompt = "Please pick your move from the options below."
-    for position = current_positions:
-        if current_positions[position] = " ":
+    for position in current_positions:
+        if current_positions[position] == " ":
             possible_moves.append(position)
-            user_prompt += "\n + position"
+            user_prompt += "\n" + position
 
-    user_choice = raw_input(user_prompt)    
+    user_choice = raw_input(user_prompt)
+    print user_choice
+
+user_move(current_positions, current_player)
 
 
 current_positions["top left"] = "X"
