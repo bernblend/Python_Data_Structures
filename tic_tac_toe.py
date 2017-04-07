@@ -60,15 +60,24 @@ def is_game_over(current_positions):
                 ["top left", "center", "bottom right"],
                 ["top right", "center", "bottom left"]]
 
+
     for winning_combo in winners:
         possible_winner = current_positions[winning_combo[0]]
         if possible_winner != " ":
             possibly_won = True
             for value in winning_combo:
-                if current_positions[value] != possible_winner
+                if current_positions[value] != possible_winner:
                     possibly_won = False
                     break
-                    
+            if possibly_won:
+                return possible_winner
+    is_draw = False
+    for position in current_positions:
+        if current_positions[position] == " ":
+            is_draw = False
+            return False
+    if is_draw:
+        return "Draw!"
 
 
 current_positions, current_player = user_move(current_positions, current_player)
