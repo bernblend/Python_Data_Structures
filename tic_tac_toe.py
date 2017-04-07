@@ -42,6 +42,12 @@ def user_move(current_positions, current_player):
     user_choice = raw_input(user_prompt).lower()
     while user_choice not in possible_moves:
         user_choice = raw_input(user_prompt).lower()
+    current_positions[user_choice] = current_player
+    if current_player == "X":
+        current_player == "O"
+    else:
+        current_player == "X"
+    return current_positions, current_player
 
 
 user_move(current_positions, current_player)
