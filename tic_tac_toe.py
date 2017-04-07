@@ -49,6 +49,12 @@ def user_move(current_positions, current_player):
         current_player = "X"
     return current_positions, current_player
 
+
+def is_game_over(current_positions):
+    
+
+
+
 current_positions, current_player = user_move(current_positions, current_player)
 print current_player
 display_board(current_positions)
