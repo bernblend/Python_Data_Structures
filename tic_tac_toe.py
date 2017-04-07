@@ -38,9 +38,9 @@ def user_move(current_positions, current_player):
         if current_positions[position] == " ":
             possible_moves.append(position)
             user_prompt += "\n" + position
-
+    print "\n"
+    
     user_choice = raw_input(user_prompt)
-    print user_choice
 
 user_move(current_positions, current_player)
 
