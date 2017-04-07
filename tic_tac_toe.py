@@ -50,9 +50,5 @@ def user_move(current_positions, current_player):
     return current_positions, current_player
 
 current_positions, current_player = user_move(current_positions, current_player)
-
-user_move(current_positions, current_player)
-
-
-current_positions["top left"] = "X"
+print current_player
 display_board(current_positions)
