@@ -31,4 +31,5 @@ def display_board(current_positions):
     """.format(**current_positions)
     print board
 
+current_positions["top left"] = "X"
 display_board(current_positions)
