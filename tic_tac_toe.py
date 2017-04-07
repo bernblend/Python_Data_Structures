@@ -44,11 +44,12 @@ def user_move(current_positions, current_player):
         user_choice = raw_input(user_prompt).lower()
     current_positions[user_choice] = current_player
     if current_player == "X":
-        current_player == "O"
+        current_player = "O"
     else:
-        current_player == "X"
+        current_player = "X"
     return current_positions, current_player
 
+current_positions, current_player = user_move(current_positions, current_player)
 
 user_move(current_positions, current_player)
 
