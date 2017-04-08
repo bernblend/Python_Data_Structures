@@ -20,7 +20,7 @@ SOLUTION:
 
 STEPS TO SOLVING ALL PROBLEMS:
 
-First: What are the inputs?
+** First: What are the inputs?
   Your birthday & current date. (Two Dates)
 
   What is the set of valid inputs? (Defensive Programming)
@@ -28,3 +28,17 @@ First: What are the inputs?
     first date.
   - Gregorian calendar started 15 Oct 1582
     (for dealing with range of dates)
+
+
+  How are inputs represented?
+
+  def daysBetweenDates(year1, month1, day1, year2, month2, day2):
+
+
+
+** Second: What are the the outputs?
+  Calculate your age in days.
+
+
+
+** Third: Solve the problem!
