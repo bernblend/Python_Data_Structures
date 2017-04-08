@@ -75,3 +75,12 @@ ALGORITHM: 'pseudocode'
     month1++
   days += day2
   while year1 < year2:
+    days += days in year1
+
+
+**** The ALGORITHM above is NO GOOD
+as it has a lot of steps and has
+inputs that it can't handle:
+  - input dates in same month
+  - month2 < month1
+  - counting days in leap years
