@@ -35,6 +35,25 @@ STEPS TO SOLVING ALL PROBLEMS:
   def daysBetweenDates(year1, month1, day1, year2, month2, day2):
 
 
+** Let's try an example:
+
+  def daysBetweenDates(2013, 1, 24, 2013, 6, 29):
+    Jan 24-31 = 7
+   +Feb        28
+   +March      31
+   +April      30
+   +May        31
+   +June 1-29  29
+
+      Total:   156
+
+
+If the current year were to be 2024, now we would
+need to look at some years like 2013 having 365 days
+and 2024 having 366 days.
+
+
+
 
 ** Second: What are the the outputs?
   Calculate your age in days.
