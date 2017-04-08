@@ -1,0 +1,30 @@
+
+Understanding a COMPUTATIONAL Problem:
+
+
+PROBLEM:
+Given your birthday and the current date,
+calculate your age in days.
+
+
+**
+
+Problem is defined by
+  possible inputs(set)
+  relationship between inputs -> desired outputs
+
+
+SOLUTION:
+  input -> Procedure -> output
+
+
+STEPS TO SOLVING ALL PROBLEMS:
+
+First: What are the inputs?
+  Your birthday & current date. (Two Dates)
+
+  What is the set of valid inputs? (Defensive Programming)
+  - Second date must NOT be before
+    first date.
+  - Gregorian calendar started 15 Oct 1582
+    (for dealing with range of dates)
