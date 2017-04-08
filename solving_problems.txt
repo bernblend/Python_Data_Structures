@@ -35,6 +35,18 @@ STEPS TO SOLVING ALL PROBLEMS:
   def daysBetweenDates(year1, month1, day1, year2, month2, day2):
 
 
+
+** Second: What are the the outputs?
+  Calculate your age in days.
+
+
+
+** Third: Solve the problem!
+
+
+
+
+
 ** Let's try an example:
 
   def daysBetweenDates(2013, 1, 24, 2013, 6, 29):
@@ -54,10 +66,12 @@ and 2024 having 366 days.
 
 
 
+ALGORITHM: 'pseudocode'
 
-** Second: What are the the outputs?
-  Calculate your age in days.
-
-
-
-** Third: Solve the problem!
+  days = # of days in month1 - day1    // ex: (31 - 24 = 7)
+  month1++                           //  go to next month
+  while month1 < month2:
+    days += # of days in month1
+    month1++
+  days += day2
+  while year1 < year2:
