@@ -130,3 +130,11 @@ def nextDay(year, month, day):
 **  REMEMBER: Write small bits of code.  ***********************
              Test them!
              Know what they do.
+
+
+
+
+
+
+
+** Fifth: Develop incrementally and test as you go!   *********
