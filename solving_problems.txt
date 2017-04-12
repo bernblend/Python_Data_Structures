@@ -24,7 +24,7 @@ SOLUTION:
 
 STEPS TO SOLVING ALL PROBLEMS:
 
-** First: What are the inputs?
+** First: What are the inputs?    ***************************
   Your birthday & current date. (Two Dates)
 
   What is the set of valid inputs? (Defensive Programming)
@@ -40,12 +40,12 @@ STEPS TO SOLVING ALL PROBLEMS:
 
 
 
-** Second: What are the the outputs?
+** Second: What are the the outputs?   **************
   Calculate your age in days.
 
 
 
-** Third: Solve the problem!
+** Third: Solve the problem!   ****************
 
 
 
@@ -88,3 +88,11 @@ inputs that it can't handle:
   - input dates in same month
   - month2 < month1
   - counting days in leap years
+
+
+
+
+
+** Fourth: Simple mechanical solution!   ****************
+  Don't optimize prematurely!
+  Simple and Correct.
