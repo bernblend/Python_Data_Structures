@@ -47,3 +47,22 @@ def nextDay(year, month, day):
         month = 1
         year += 1
     return  year, month, day
+
+
+
+
+
+
+def test():
+    test_cases = [((2012,9,30,2012,10,30),30),
+                  ((2012,1,1,2013,1,1),360),
+                  ((2012,9,1,2012,9,4),3)]
+
+    for (args, answer) in test_cases:
+        result = daysBetweenDates(*args)
+        if result != answer:
+            print "Test with data:", args, "failed"
+        else:
+            print "Test case passed!"
+
+test()
