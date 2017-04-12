@@ -16,10 +16,32 @@ def isLeapYear(year):
     # http://en.wikipedia.org/wiki/Leap_year#Algorithm
     ##
 
-def daysBetweenDates(y1, m1, d1, y2, m2, d2):
-    ##
-    # Your code here.
-    ##
+
+def dateIsBefore(year1, month1, day1, year2, month2, day2):
+    """Returns True if year1-month1-day1 is before
+        year2-month2-day2. Otherwise, returns False."""
+    if year1 < year2:
+        return True
+    if year1 == year2:
+        if month1 < month2:
+            return True
+        if month1 == month2:
+            return day1 < day2:
+    return False
+
+
+
+
+def daysBetweenDates(year1, month1, day1, year2, month2, day2):
+    """Returns the number of days between year1/month1/day1
+       and year2/month2/day2. Assumes inputs are valid dates
+       in Gregorian calendar, and the first date is not after
+       the second."""
+
+    days = 0
+    while dateIsBefore(year1, month1, day1, year2, month2, day2):
+        year1, month1, day1 = nextDay(year1, month1, day1)
+        days += 1
     return days
 
 
