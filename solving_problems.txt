@@ -70,7 +70,7 @@ and 2024 having 366 days.
 
 
 
-ALGORITHM: 'pseudocode'
+FIRST ALGORITHM: pseudocode
 
   days = # of days in month1 - day1    // ex: (31 - 24 = 7)
   month1++                           //  go to next month
@@ -93,6 +93,20 @@ inputs that it can't handle:
 
 
 
+
+
 ** Fourth: Simple mechanical solution!   ****************
   Don't optimize prematurely!
   Simple and Correct.
+
+
+SECOND ALGORITHM: Simple pseudocode:
+
+  day = 0
+  while date1 is before date2
+    date1 = day after date1
+    days +=1
+  return days
+
+
+First let's do:  nextDay()
