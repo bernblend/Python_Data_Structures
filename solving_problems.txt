@@ -138,3 +138,10 @@ def nextDay(year, month, day):
 
 
 ** Fifth: Develop incrementally and test as you go!   *********
+
+
+Another Example:
+
+Sudoku Valid (video below):
+
+https://plus.google.com/events/cvd7n15lqrmf267jfb4b978bo7c?authkey=CNiLyr-Q-t_I2AE
