@@ -1,6 +1,10 @@
 
 Understanding a COMPUTATIONAL Problem:
 
+NOTE:
+Processor can do about a billion instructions per second
+(which is roughly 1 nanosecond per instruction).
+
 
 PROBLEM:
 Given your birthday and the current date,
