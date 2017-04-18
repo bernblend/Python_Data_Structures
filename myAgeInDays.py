@@ -21,7 +21,7 @@ def isLeapYear(year):
 
 
 
-def daysInMonth(year, month):
+def daysInMonth(year, month):   # NEED TO CALL THIS ONE.
     # if month in (1, 3, 5, 7, 8, 10, 12)
     if month == 1 or month ==3 or month == 5 or month == 7 \
        or month == 8 or month == 10 or month == 12:
@@ -77,6 +77,8 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
        in Gregorian calendar, and the first date is not after
        the second."""
     days = 0
+    month1 = daysInMonth(year1, month1)
+    month2 = daysInMonth(year2, month2)
     assert not dateIsBefore(year2, month2, day2, year1, month1, day1)
     while dateIsBefore(year1, month1, day1, year2, month2, day2):
         year1, month1, day1 = nextDay(year1, month1, day1)
@@ -88,27 +90,8 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
 
 
 
+
 def mytest():
-    assert daysBetweenDates(2013, 1, 1, 2013, 1, 1) == 0
-    assert daysBetweenDates(2013, 1, 1, 2013, 1, 2) == 1
-    assert nextDay(2013, 1, 1) == (2013, 1, 2)
-    assert nextDay(2013, 4, 30) == (2013, 5, 1)
-    assert nextDay(2012, 12, 31) == (2013, 1, 1)
-    #assert nextDay(2013, 2, 28) == (2013, 3, 1)
-    assert nextDay(2013, 9, 30) == (2013, 10, 1)
-
-    assert nextDay(2012, 2, 28) == (2012, 2, 29)
-    #assert daysBetweenDates(2012, 1, 1, 2013, 1, 1) == 366
-    #assert daysBetweenDates(2013, 1, 1, 2014, 1, 1) == 365
-    assert daysBetweenDates(2013, 1, 24, 2013, 6, 29) == 156
-    print "Test finished"
-
-
-
-
-
-
-def test():
     test_cases = [((2012,1,1,2012,2,28), 58),
                   ((2012,1,1,2012,3,1), 60),
                   ((2011,6,30,2012,6,30), 366),
@@ -122,7 +105,43 @@ def test():
         else:
             print "Test case passed!"
 
+
+
+
+
+
+
+
+
+def test():
+    assert daysBetweenDates(2013, 1, 1, 2013, 1, 1) == 0
+    assert daysBetweenDates(2013, 1, 1, 2013, 1, 2) == 1
+    #assert nextDay(2013, 1, 1) == (2013, 1, 2)
+    #assert nextDay(2013, 4, 30) == (2013, 5, 1)
+    #assert nextDay(2012, 12, 31) == (2013, 1, 1)
+    #assert nextDay(2013, 2, 28) == (2013, 3, 1)
+    #assert nextDay(2013, 9, 30) == (2013, 10, 1)
+
+    #assert nextDay(2012, 2, 28) == (2012, 2, 29)
+    #assert daysBetweenDates(2012, 1, 1, 2013, 1, 1) == 366
+    #assert daysBetweenDates(2013, 1, 1, 2014, 1, 1) == 365
+    #assert daysBetweenDates(2013, 1, 24, 2013, 6, 29) == 156
+    days = daysBetweenDates(2013, 1, 1, 2013, 1, 1)
+    print "This many days have passed: " + str(days)
+    days = daysBetweenDates(2013, 1, 1, 2013, 1, 2)
+    print "This many days have passed: " + str(days)
+    days = daysBetweenDates(1988, 1, 11, 2017, 4, 12)
+    print "This many days have passed: " + str(days)
+    print "Test Finished!"
+
 test()
+
+
+
+
+
+
+
 
 
 # Some of these tests failed.
